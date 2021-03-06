@@ -10,7 +10,7 @@ const Gif = () => {
         <Fragment>
             <div className="container mt-5">
                 <h3>GifExpertApp</h3>
-                <SearchBar />
+                <SearchBar setList={setList} />
                 <hr />
             </div>
         </Fragment>

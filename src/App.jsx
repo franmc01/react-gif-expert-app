@@ -1,4 +1,4 @@
-import Gif from './components/Gif';
+import Gif from './screens/Gif';
 
 function App() {
   return (

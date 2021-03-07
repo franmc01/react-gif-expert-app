@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
+import GifGrid from '../components/GifGrid';
 import SearchBar from '../components/SearchBar';
 
 const Gif = () => {
 
-    const initialState = ['Goku', 'One Punch', 'Naruto', 'Doraemon']
-    const [list, setList] = React.useState(initialState);
+    const [list, setList] = React.useState([]);
 
     return (
         <Fragment>
@@ -12,6 +12,12 @@ const Gif = () => {
                 <h3>GifExpertApp</h3>
                 <SearchBar setList={setList} />
                 <hr />
+                <ol>
+                    { list.map(item => (
+                        <GifGrid key={item} item={item} />
+                      ))
+                    }
+                </ol>
             </div>
         </Fragment>
     )

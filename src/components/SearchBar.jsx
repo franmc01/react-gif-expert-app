@@ -15,7 +15,7 @@ const SearchBar = ({ setList }) => {
         }
 
         setError(false);
-        setList(list => [...list, inputValue]);
+        setList(list => [inputValue, ...list]);
 
     }
 
@@ -39,7 +39,7 @@ const SearchBar = ({ setList }) => {
                 </div>
             </form>
         </Fragment>
-    )
+    );
 }
 
-export default SearchBar
+export default SearchBar;

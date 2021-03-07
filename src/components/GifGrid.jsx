@@ -11,7 +11,7 @@ const GifGrid = ({ item }) => {
             <br/>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
-                    loading ?  <h1>Cargando...</h1>
+                    loading ?  <p className="animate__animated animate__fadeIn animate__bounceOut">Loading...</p>
                             :  data.map(img => (
                                 <GifItem key={img.id} {...img} />
                                 ))

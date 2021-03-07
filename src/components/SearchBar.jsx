@@ -16,6 +16,7 @@ const SearchBar = ({ setList }) => {
 
         setError(false);
         setList(list => [inputValue, ...list]);
+        setInputValue('');
 
     }
 

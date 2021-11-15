@@ -3,7 +3,7 @@ import React from 'react'
 const Error = () => {
     return (
         <div id="search" className="invalid-feedback">
-            Debe ingresar algo para realizar la busqueda
+            Debe ingresar algún texto para realizar la búsqueda
         </div>
     )
 }

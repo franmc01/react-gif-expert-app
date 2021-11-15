@@ -1,7 +1,7 @@
 # React - Gifs Expert App
 
-## Captures
+## Screenshot of the previous version
 
 ![](https://res.cloudinary.com/cloudfrancisco/image/upload/v1615132156/giftsap_oqebj5.png)
 
-Demo: https://react-gifts-app-2021.netlify.app/
+## Screenshot of the new version

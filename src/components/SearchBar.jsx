@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
+import React, {Fragment} from 'react'
 import Error from './Error';
 
-const SearchBar = ({ setList }) => {
+const SearchBar = ({setList}) => {
 
     const [inputValue, setInputValue] = React.useState('');
     const [error, setError] = React.useState(false);
@@ -9,7 +9,7 @@ const SearchBar = ({ setList }) => {
     const handleSearchSubmit = (e) => {
 
         e.preventDefault();
-        if (inputValue.trim() === ''){
+        if (inputValue.trim() === '') {
             setError(true);
             return;
         }
@@ -25,18 +25,19 @@ const SearchBar = ({ setList }) => {
             <form onSubmit={handleSearchSubmit}>
                 <div className="input-group mb-3">
                     <input type="text"
-                        className={error ? 'form-control is-invalid' : 'form-control'}
-                        value={inputValue}
-                        onChange={e => setInputValue(e.target.value)}
-                        placeholder="Buscar..."
-                        id="search" />
+                           className={error ? 'form-control is-invalid' : 'form-control'}
+                           value={inputValue}
+                           onChange={e => setInputValue(e.target.value)}
+                           placeholder="Buscar..."
+                           id="search"/>
 
                     <div className="input-group-append">
                         <button className="btn btn-primary"
-                            type="submit">Buscar</button>
+                                type="submit">Buscar
+                        </button>
                     </div>
 
-                    { error && <Error /> }
+                    {error && <Error/>}
                 </div>
             </form>
         </Fragment>
